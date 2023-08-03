@@ -18,5 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
+Route::get('/add-user', [App\Http\Controllers\UserController::class, 'add'])->name('add-user');
 
 Auth::routes();
