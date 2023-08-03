@@ -20,4 +20,16 @@ $(function() {
     $('#add').on('click', function() {
         window.location = 'add-user'
     })
+
+    $('#storeUser').on('click', function() {
+        $.post('api/users', 
+        {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            password: $('#password').val()   
+        },
+        function() {
+            window.location = 'user'
+        })
+    })
 })

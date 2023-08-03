@@ -24,7 +24,7 @@
             </div>
             <div class="row mb-2">
                 <div class="col">
-                    <input type="submit" class="btn btn-sm btn-primary" name="submit" id="submit">
+                    <input type="submit" class="btn btn-sm btn-primary" name="submit" id="storeUser">
                 </div>
             </div>
         </div>
